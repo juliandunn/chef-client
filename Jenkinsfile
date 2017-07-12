@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             reuseNode false
-            args '--privileged -v /var/run/docker.sock:/var/run/docker.sock'
+            args '-u root --privileged -v /var/run/docker.sock:/var/run/docker.sock'
             image 'chef/chefdk'
         }
     }
