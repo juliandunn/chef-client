@@ -12,7 +12,8 @@ pipeline {
     stages {
         stage('\u27A1 Dependencies for Docker and ChefDK') {
             steps {
-                sh '''apt-get update
+                sh '''hostname
+apt-get update
 apt-get install -y apt-transport-https ca-certificates curl software-properties-common'''
             }
         }
