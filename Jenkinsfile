@@ -7,7 +7,7 @@ pipeline {
         }
     }
     triggers {
-        pollSCM('H * * * *')
+        pollSCM('H/10 * * * *')
     }
     stages {
         stage('\u27A1 Dependencies for Docker and ChefDK') {
